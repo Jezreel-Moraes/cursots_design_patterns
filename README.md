@@ -1,3 +1,5 @@
+
+
 Creartional: How objects are created
 
 Structural: How objects related to each other
@@ -7,10 +9,12 @@ Behavioral: How objects comunicate with each other
 +------------+------------+------------+
 | Creational | Structural | Behavioral |
 +------------+------------+------------+
-| Singleton  | Decorator  | Iterator   |
-| Prototype  | Proxy      | Observer   |
-| Builder    | Facade     | Mediator   |
-| Factory    |            | States     |
+| Singleton  | Composite  | Iterator   |
+| Prototype  | Adapter    | Observer   |
+| Builder    | Bridge     | Mediator   |
+| Factory    | Decorator  | States     |
+| A. Factory | Facade     |            |
+|            | Proxy      |            |
 +------------+------------+------------+
 
 # Creational:
@@ -48,22 +52,55 @@ Behavioral: How objects comunicate with each other
    You can not have a Windows button for a Linux window container. So, for each OS you need a factory that only
    create things for that OS. 
    
+   **Ex:**
+
    WidowsFactory -> createWindowContainer() -> createButton() 
    LinuxFactory -> createWindowContainer() -> createButton() 
 
 # Structural:
 
+   ## Composite:
+
+   A class that contain other classes with the same properties and methods.
+   A structure that behave yourself like a single object, delegating methods calls
+   to its children. 
+   
+   **Ex:**
+
+   (Component -> getPrice(): calls -> Leaf -> getPrice())
+
+   ## Adapter:
+
+   A class that adapts dependencies to a new own system interface. Separate the client code
+   of that dependencies.
+
+   **Ex:**
+
+   clientCode -> Adapter.getUSDPrice() -> Adapter -> Dependence.getUSDPrice()
+
    ## Decorator:
+
+   Add new functionality to an object without changing its structure.
+   
+   **Ex:**
+
+   shirt -> printedShirt(shirt) -> shirt with a print on the shirt. extend the object without changing it.
 
    ## Facade:
 
-	
+	A class that provides an interface to a subsystem.
+   This is a way to decrease the complexity of the code, simplifying it in to methods in a class.
 
    ## Proxy:
 
-	
+   Try substitute an object. It calls the original object methods only when it is necessary.
+   Can be used in different cases, in different ways
 
-#Behavioral:
+
+
+
+
+# Behavioral:
 
    # Iterator:
 

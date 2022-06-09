@@ -1,6 +1,3 @@
-from classes import main_dish_builder
-
-
 if __package__ is None or __package__ == '':
    # print('no package - init Main')
    from classes.meals import *
