@@ -34,15 +34,18 @@ Behavioral: How objects comunicate with each other
    ## Builder:
 
    An class with functions that return an instantiated object with some specific properties
-   already defined, for any case... Is more easy to create some default objects, and create new
-   objects with variated internal values... You can build a complex object like a lego...
+   already defined, for any case. Is more easy to create some default objects, and create new
+   objects with variated internal values. You can build a complex object like a lego.
 
    ## Factory:
 
    An class, function or module that create objects, and return them. Is like a builder, but the returned object 
    do not receive adicional properties or functions like builder where you can add more and more atributes to the object.
 
-   (factory -> you receive the house done. builder -> You build the house pice by pice... )
+   **Ex:**
+   
+   Factory: you receive the house done.
+   Builder: You build the house pice by pice.
 	
    ## Abstract Factory:
 
@@ -54,8 +57,8 @@ Behavioral: How objects comunicate with each other
    
    **Ex:**
 
-   WidowsFactory -> createWindowContainer() -> createButton() 
-   LinuxFactory -> createWindowContainer() -> createButton() 
+   WidowsFactory: createWindowContainer() -> createButton() 
+   LinuxFactory: createWindowContainer() -> createButton() 
 
 # Structural:
 
