@@ -115,7 +115,6 @@ Behavioral: How objects communicate with each other
 
    A class that defines the skeleton of an algorithm and defer the implementation to subclasses. It is used to define the skeleton of an algorithm in an operation, and defer the real implementation to the subclasses.
 
-
    ## Observer:
 
    A class that provides a way to publish/subscribe to an event. It is used to notify observers of an event. 
@@ -123,3 +122,7 @@ Behavioral: How objects communicate with each other
    ## Iterator:
 
    A class that provides a way to access the elements of an aggregate object sequentially (or not) without exposing its underlying representation. It is used to iterate over a collection of objects.   
+
+   ## Visitor:
+
+   A class that provides a way to visit the elements of an aggregate object without exposing its underlying representation. It is used to visit the elements of a collection of objects.
