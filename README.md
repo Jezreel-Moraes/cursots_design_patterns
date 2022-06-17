@@ -4,18 +4,6 @@ Structural: How objects related to each other
 
 Behavioral: How objects communicate with each other
 
-+------------+------------+------------+
-| Creational | Structural | Behavioral |
-+------------+------------+------------+
-| Singleton  | Composite  | Strategy   |
-| Prototype  | Adapter    | Command    |
-| Builder    | Bridge     | Memento    |
-| Factory    | Decorator  |            |
-| A. Factory | Facade     |            |
-|            | Proxy      |            |
-|            | Flyweight  |            |
-+------------+------------+------------+
-
 # Creational:
 
    ## Singleton:
@@ -110,3 +98,28 @@ Behavioral: How objects communicate with each other
    ## Memento:
 
    A class that provides a way to save and restore the state of an object without breaking the encapsulation of its implementation. It is used to save the state of the object to restore it when it is necessary. 
+
+   ## State:
+
+   Allows an object to change its behavior when its internal state changes. the object will appear to have changed its class. It is used to change the behavior of an object in run time.
+
+   ## Mediator:
+
+   A class that provides a mediator object between two or more objects. It is used to coordinate the activities of other objects without coupling the invoker of the request to the receiver of the request.
+
+   ## Chain of Responsibility:
+
+   A class that provides a way to link a chain of objects and use them as a single object. It is used to delegate the request to the next object until the request is handled.
+
+   ## Template Method:
+
+   A class that defines the skeleton of an algorithm and defer the implementation to subclasses. It is used to define the skeleton of an algorithm in an operation, and defer the real implementation to the subclasses.
+
+
+   ## Observer:
+
+   A class that provides a way to publish/subscribe to an event. It is used to notify observers of an event. 
+
+   ## Iterator:
+
+   A class that provides a way to access the elements of an aggregate object sequentially (or not) without exposing its underlying representation. It is used to iterate over a collection of objects.   

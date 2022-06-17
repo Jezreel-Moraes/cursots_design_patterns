@@ -11,8 +11,8 @@ shopping_cart.add_products(ProductProtocol("Product 2", 50))
 shopping_cart.add_products(ProductProtocol("Product 2", 50))
 shopping_cart.add_products(ProductProtocol("Product 2", 50))
 
-shopping_cart.set_discount_strategy(NewDiscount())
 shopping_cart.set_discount_strategy(DefaultDiscount())
+shopping_cart.set_discount_strategy(NewDiscount())
 
 print(shopping_cart.get_total())
 print(shopping_cart.get_total_with_discount())
