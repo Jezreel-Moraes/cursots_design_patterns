@@ -1,4 +1,3 @@
-from re import A
 from typing import List
 
 from admin_user import AdminUser
