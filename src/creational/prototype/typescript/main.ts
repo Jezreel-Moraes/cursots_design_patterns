@@ -1,5 +1,5 @@
-import { CarsCache } from './classes/car-cache';
-import { SmallCar } from './classes/cars';
+import { CarsCache } from './classes/CarCache';
+import { SmallCar } from './classes/Cars';
 
 const carList = [];
 
