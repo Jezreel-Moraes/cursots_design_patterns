@@ -1,2 +1,0 @@
-from .customer_vehicle_factory_1 import CustomerVehicleFactory1
-from .customer_vehicle_factory_2 import CustomerVehicleFactory2
