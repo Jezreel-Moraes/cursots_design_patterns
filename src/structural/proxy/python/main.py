@@ -1,33 +1,35 @@
 import asyncio
 
-from admin_user import AdminUser
-from user_proxy import UserProxy
+from classes.admin_user import AdminUser
+from classes.user_proxy import UserProxy
 
 
 async def with_proxy_as_cache():
     user = UserProxy('John', 'Doe')
     print("that's gonna take 2 seconds")
-    print(await user.get_addresses())
-    print()
-    print("that's gonna repeat...")
+    print(await user.get_addresses(), '\n')
 
-    for _ in range(10):
+    print("that's gonna repeat 5 times")
+    for _ in range(5):
         print(await user.get_addresses())
-        print()
 
 
 async def without_proxy():
     user = AdminUser('John', 'Doe')
     print("that's gonna take 2 seconds")
-    print(await user.get_addresses())
-    print()
-    print("that's gonna repeat...")
+    print(await user.get_addresses(), '\n')
 
-    for _ in range(10):
+    print("that's gonna repeat 5 times:")
+    for _ in range(5):
         print(await user.get_addresses())
-        print()
+
+
+def main():
+    print('With proxy as cache:\n')
+    asyncio.run(with_proxy_as_cache())
+    print('\nWithout proxy:\n')
+    asyncio.run(without_proxy())
 
 
 if __name__ == '__main__':
-    asyncio.run(with_proxy_as_cache())
-    asyncio.run(without_proxy())
+    main()

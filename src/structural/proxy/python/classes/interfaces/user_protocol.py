@@ -1,14 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-
-class UserAddressProtocol():
-    def __init__(self, street: str, number: int) -> None:
-        self.street = street
-        self.number = number
-
-    def __repr__(self) -> str:
-        return f'{{ street: {self.street}, number: {self.number}}}'
+from classes.interfaces.user_address_protocol import UserAddressProtocol
 
 
 class UserProtocol(ABC):
