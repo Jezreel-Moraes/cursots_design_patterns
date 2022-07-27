@@ -1,6 +1,6 @@
-import { BicycleFactory } from './classes/factories/bicycle-factory';
-import { CarFactory } from './classes/factories/car-factory';
-import { Vehicle } from './classes/interfaces/vehicle-protocol';
+import { BicycleFactory } from './classes/factories/BicycleFactory';
+import { CarFactory } from './classes/factories/CarFactory';
+import { Vehicle } from './classes/interfaces/VehicleProtocol';
 
 const carFactory = new CarFactory();
 const bicycleFactory = new BicycleFactory();
