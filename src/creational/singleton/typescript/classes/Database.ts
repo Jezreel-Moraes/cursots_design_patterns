@@ -1,11 +1,11 @@
-import { User } from '../interfaces/user-protocol';
+import { UserProtocol } from '../interfaces/UserProtocol';
 
 export default null;
 
 class Database {
-  private users: User[] = [];
+  private users: UserProtocol[] = [];
 
-  add(...users: User[]): void {
+  add(...users: UserProtocol[]): void {
     users.forEach((user) => {
       this.users.push(user);
     });

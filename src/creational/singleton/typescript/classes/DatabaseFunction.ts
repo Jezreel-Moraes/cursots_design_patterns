@@ -1,10 +1,10 @@
-import { User } from '../interfaces/user-protocol';
+import { UserProtocol } from '../interfaces/UserProtocol';
 
 export const DatabaseFunction = (function () {
-  const users: User[] = [];
+  const users: UserProtocol[] = [];
 
   return {
-    add(user: User): void {
+    add(user: UserProtocol): void {
       users.push(user);
     },
 

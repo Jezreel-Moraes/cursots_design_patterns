@@ -1,4 +1,4 @@
-export interface User {
+export interface UserProtocol {
   name: string;
   age: number;
 }

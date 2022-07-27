@@ -1,9 +1,9 @@
-import { User } from '../interfaces/user-protocol';
+import { UserProtocol } from '../interfaces/UserProtocol';
 
-const users: User[] = [];
+const users: UserProtocol[] = [];
 
 export const DatabaseModule = {
-  add(user: User): void {
+  add(user: UserProtocol): void {
     users.push(user);
   },
 
