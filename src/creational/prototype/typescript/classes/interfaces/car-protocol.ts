@@ -4,11 +4,13 @@ type ID = number | null;
 type TYPE = IdsKeys | null;
 
 export abstract class Car {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [x: string]: any;
   constructor(protected _type: TYPE = null, protected _id: ID = null) {
     let _ = 0;
     for (let i = 0; i < 100000; i++)
       for (let j = 0; j < 10000; j++)
+        // eslint-disable-next-line @typescript-eslint/no-unused-vars
         if (i != 0 && j != 0 && i % j != 0) _ += i * j;
     console.log(' > Creating new car:', this.__proto__.constructor.name);
   }
