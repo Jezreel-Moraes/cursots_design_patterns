@@ -1,4 +1,4 @@
-import { MainDishBuilder } from './classes/main-dish-builder';
+import { MainDishBuilder } from './classes/builders/MainDishBuilder';
 
 const mainDishBuilder = new MainDishBuilder();
 const meal = mainDishBuilder.makeMeal().getMeal();

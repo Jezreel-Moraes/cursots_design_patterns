@@ -1,4 +1,4 @@
-import { MealCompositeProtocol } from './interfaces/meal-composite-protocol';
+import { MealCompositeProtocol } from './interfaces/MealCompositeProtocol';
 
 export class AbstractMeal implements MealCompositeProtocol {
   constructor(private name: string, private price: number) {}

@@ -1,4 +1,4 @@
-from classes.main_dish_builder import MainDishBuilder
+from classes.builder.main_dish_builder import MainDishBuilder
 from classes.vegan_dish_builder import VeganDishBuilder
 
 
