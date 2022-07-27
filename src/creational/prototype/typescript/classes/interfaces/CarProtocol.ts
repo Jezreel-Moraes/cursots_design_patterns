@@ -1,4 +1,4 @@
-import { IdsKeys } from '../car-cache';
+import { IdsKeys } from '../CarCache';
 
 type ID = number | null;
 type TYPE = IdsKeys | null;
