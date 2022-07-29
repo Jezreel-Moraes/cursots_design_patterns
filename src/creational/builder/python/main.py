@@ -1,5 +1,5 @@
 from classes.builder.main_dish_builder import MainDishBuilder
-from classes.vegan_dish_builder import VeganDishBuilder
+from classes.builder.vegan_dish_builder import VeganDishBuilder
 
 
 def main():
