@@ -1,4 +1,5 @@
-from .product_protocol import ProductProtocol
+from classes.interfaces.product_protocol import ProductProtocol
+
 
 class TShirt(ProductProtocol):
     def __init__(self):
