@@ -11,7 +11,4 @@ class Compositor(Component):
             self.children.append(item)
 
     def get_price(self) -> int:
-        sum = 0
-        for component in self.children:
-            sum += component.get_price()
-        return sum
+        return sum(item.get_price() for item in self.children)
